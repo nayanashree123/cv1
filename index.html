@@ -1,0 +1,291 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title> My first website </title>
+<link rel="stylesheet"
+href="style.css"type="text/css">
+
+<style>/* Stylesheet 1: */
+body {
+    font: 100% Lucida Sans, Verdana;
+    margin: 20px;
+    line-height: 26px;
+}
+
+.container {
+    xmin-width: 900px;
+}
+
+.wrapper {
+    position: relative;
+    overflow: auto;
+}
+
+#top, #sidebar, #bottom, .menuitem {
+    border-radius: 4px;
+    margin: 4px;
+    text-align:center;
+}
+
+#top {
+    background-color: #4CAF50;
+    color: #ffffff;
+    padding: 15px;
+}
+
+#menubar {
+    width: 200px;
+    float: left
+}
+
+#main {
+    padding: 10px;
+    margin: 0 210px;
+}
+
+#sidebar {
+    background-color: #32a4e7;
+    color: #ffffff;
+    padding: 10px;
+    width: 180px;
+    bottom: 0;
+    top: 0;
+    right: 0;
+    position: absolute;
+}
+
+#bottom {
+    border: 1px solid #d4d4d4;
+    background-color: #f1f1f1;
+    text-align: center;
+    padding: 10px;
+    font-size: 70%;
+    line-height: 14px;
+}
+
+#top h1, #top p, #menulist {
+    margin: 0;
+    padding: 0;
+}
+
+.menuitem {
+    background-color:powderblue;
+    border: 1px solid #d4d4d4;
+    list-style-type: none;
+    padding: 2px;
+    
+}
+
+.menuitem:hover {
+    background-color:powderblue;
+}
+
+.menuitem:first-child {
+   background-color:powderblue;
+   
+  
+}
+
+a {
+    color: #000000;
+    text-decoration: underline;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+
+@media (max-width: 800px) {
+    #sidebar {
+        width: auto;
+        position: relative;
+    } 
+    #main {
+        margin-right: 0;
+    }    
+       
+}
+
+@media (max-width: 600px) {
+    #menubar {
+        width: auto;
+        float: none;
+    }
+    #main {
+        margin: 0;
+    }    
+}
+</style>
+
+</head>
+<body>
+
+<div class="container wrapper">
+  <div id="top">
+    <h1 align:"center">Welcome</h1>
+  </div>
+  <div class="wrapper">
+   <div id="menubar">
+     <ul id="menulist">
+       <li class="menuitem" onclick="reStyle(0)">Career objective 
+	  <li class="menuitem" onclick="reStyle(1)">Educational Qualification 
+  	<li class="menuitem" onclick="reStyle(2)">projects 
+	  <li class="menuitem" onclick="reStyle(3)">Technical skills 
+ 	 <li class="menuitem" onclick="reStyle(4)">Workshop 
+  	<li class="menuitem" onclick="reStyle(5)">Achivements 
+ 	 <li class="menuitem" onclick="reStyle(6)">Interest 
+  	<li class="menuitem" onclick="reStyle(7)">Extra curricular activity 
+       
+     </ul>
+    </div>
+    <div id="main">
+      <h1>RESUME</h1>
+      <p>
+<table cellspacing="10">
+ <tr align="left" valign="top">
+	<td>	
+		<br>
+		<img src="C:\Users\nayanashree\Desktop\p1.jpg" alt="profile photo" height="120" width="120"> 
+	</td>
+	<td>
+		  <p style="color:purple;font-weight:bold;font-family:Arial,Helvetica,sans-serif">   <font size="4"> <b>Nayanashree H C </b> </font> <br>
+		  <font size="2"> mail id:<em>nayanashree8130@gmail.com </em> <br>
+		    contact no.:<em> 9008685549  </em>  <br>
+		    Nayanamanohara nilaya-Mallasandra <br>
+		   Tumkur,Karnataka-572107 </font> </p>	
+	</td>
+ </tr>
+<table cellspacing="5">
+<tr align="left" valign="top">
+	<td>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold">  CAREER OBJECTIVE </p>
+	</td>
+	<td>	
+		<p class="leftall"> <font size="3"> To succeed in an environment of growth and excellence and earn a job which provides me job 
+		satisfaction and self-development and help me achieve personal as well as organisation goals.</font></p> 
+	</td>
+ </tr>
+
+ <tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold">EDUCATIONAL QUALIFICATIONS </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"><font size="3"><b>Bachelor of Technology in</font><br>
+		 <font size="4">Computer Science and Engineering </b><br> 
+		SIT Tumkur <br>
+		CGPA:9.5</font> </p>
+
+		<p class="leftall"> <font size="3"><b>PUC Science(PCMB) from Karnataka state board</font></b><br> 
+		 <font size="4">Sri vaishnavi chethana tumkur <br> 
+		 95%  </font> </p>
+
+		<p class="leftall"> <font size="3"><b>  SSLC from  Karnataka state board </b> <br>
+		<font size="4"> Empress girls high school <br>
+		 96.96%  </font>  </p>
+	</td>
+ </tr>
+ <tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold">  PROJECTS </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"> <font size="3"> <b>1.Hospital Management System</b> <br>
+		It is a project related to Data Structure which demonstrate admission,checkup,treatment and discharge process in hospitals.</font></p>
+		<p class="leftall"> <font size="3"> <b>2.Diabetes Detection </b><br>
+		It is a project demonstrating Object-Oriented Programming in C++ which check whether the person is 
+		diabetic or not based on symptoms and suggest him for further treatment.</font></p>
+		<p class="leftall"> <font size="3"> <b>3.Textile Shop Management System </b><br>
+		It is a project implemented using C language which demonstate salling,billing and stock recovery in textile shops.</font></p>
+	</td>
+ </tr>
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold"> TECHNICAL SKILLS </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"> <font size="3">Language known:C,C++ </font></p>
+		
+		 
+	</td>
+ </tr>
+
+<tr align="left" valign="top">
+	<td>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold"> WORKSHOP </p>
+	</td>
+	<td>
+		<p class="leftall"> <font size="3">*Attended the workshop in Linux<br>
+		*Attended the workshop Feelemployee</font>
+		 </p> 
+	</td>
+ </tr>
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold"> ACHIEVEMENTS </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"> <font size="3">Awarded as a course master in C in soloLearn </font> </p> 
+	</td>
+ </tr>
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold"> INTERESTS </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"> <font size="3">*Exploring new things<br>
+		*Coding in sololearn <br>
+		*Reading books</font> </p> 
+	</td>
+ </tr>
+<tr align="left" valign="top">
+	<td>
+		<br>
+		<p class="leftah" style="background-color:DodgerBlue;font-weight:bold"> EXTRA CURRICULAR ACTIVITIES </p>
+	</td>
+	<td>
+		<br>
+		<p class="leftall"> <font size="3">*Volunteer in branch fests <br>
+		*Discussion with friends about new technologies </font> </p> 
+	</td>
+ </tr>
+</table>
+<hr>
+
+<table>
+<h4> Feedback </h4>
+<tr>
+<td>
+<form action="inedx.html" method="get">
+First Name:<input type="text" name="fname"> <br>
+Last Name :<input type="text" name="lname"> <br>
+Email ID  :<input type="text" name="mail"> <br>
+Comments  :<input type="text" name="comm"> <br>
+<input type="Submit" value="submit">
+</form>
+</td>
+</tr>
+</table>
+<hr style="background-color:green;">
+<p calss="last" style="background-color:green;"> <font size="4">Contact details</font> <br style="background-color:green;">
+<font size="3"> Website link- <a href="http://www.sit.ac.in"> link </a> <br style="background-color:greeen;">
+ Mail address- <a href="mailto:nayanashree8130@gmail.com"> maillink </a> </font> </p>
+
+      </p>
+      
+
+</body>
+</html>
+
